@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body{
+  overflow:hidden;
+}
+.topBar{
+  z-index:1;
+  position:absolute;
+  width:200px;
+  height:40px;
+  background-color:#f39c12;
+}
+.form{
+  margin-top:40px;
+  position:absolute;
+  width:200px;
+  height:160px;
+  background-color:#f1c40f;
+}
+.textArea{
+  position:absolute;
+  border-color:red;
+  width:180px;
+  height:140px;
+  margin:10px;
+  font-family: 'Lato', sans-serif;
+  overflow:hide;
+}
+.textArea:focus{
+  outline: 0;
+}

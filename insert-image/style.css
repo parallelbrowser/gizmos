@@ -1,0 +1,15 @@
+.imageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.insertedImage {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
