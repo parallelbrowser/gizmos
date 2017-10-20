@@ -1,0 +1,24 @@
+#audioPlayer{
+	width: 80px;
+	height: 60px;
+	margin: 50px auto auto auto;
+  border: solid;
+  position: absolute;
+  background-color:white;s
+}
+
+#playerButton{
+    height:60px;
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+    position:absolute;
+    border-right:solid;
+}
+
+.play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}

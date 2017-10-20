@@ -1,0 +1,194 @@
+@-webkit-keyframes $animation_name {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes $animation_name {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes $animation_name {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes $animation_name {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes $animation_name {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes $animation_name {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.video {
+  width: 300px;
+  height: 300px;
+  background: #000;
+  margin: 100px auto;
+  position: relative;
+  position: absolute;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+}
+
+.playbutton {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  text-indent: -9999;
+  color: transparent;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  position: absolute;
+}
+.playbutton:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #FFF;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.playbutton:after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  display: block;
+  width: 30px;
+  height: 40px;
+  border-left: 10px solid #FFF;
+  border-right: 10px solid #FFF;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.playbutton:hover:after {
+  opacity: 1;
+  width: 150px;
+  left: -25px;
+}
+.playbutton.loading:before {
+  opacity: 0;
+}
+.playbutton.loading:after {
+  opacity: 1;
+  width: 150px;
+  left: -25px;
+  border-radius: 3px;
+  -webkit-animation: spin 800ms linear infinite;
+  -moz-animation: spin 800ms linear infinite;
+  -ms-animation: spin 800ms linear infinite;
+  -o-animation: spin 800ms linear infinite;
+  animation: spin 800ms linear infinite;
+}
+.playbutton.playing {
+  top: 90%;
+  left: 90%;
+}
+.playbutton.playing:after {
+  -webkit-animation: endspin 600ms;
+  -moz-animation: endspin 600ms;
+  -ms-animation: endspin 600ms;
+  -o-animation: endspin 600ms;
+  animation: endspin 600ms;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  top: 30px;
+  left: 40px;
+  width: 30px;
+  opacity: 1;
+  opacity: .1;
+}
+.playbutton.playing:before {
+  opacity: 0;
+}
+.playbutton.playing:hover:after {
+  opacity: 1;
+}
+.playbutton.playing.paused:before {
+  opacity: 1;
+}
+.playbutton.playing.paused:after {
+  opacity: 0;
+}

@@ -1,7 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
-body{
-  overflow:hidden;
-}
 .topBar{
   z-index:1;
   position:absolute;

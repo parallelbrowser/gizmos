@@ -6,9 +6,6 @@ xPath: dat://aafa5df22180352b1f0931a0268fe9c739fb75546cf31fd4d10e85a1f5004a68/gi
 dat://aafa5df22180352b1f0931a0268fe9c739fb75546cf31fd4d10e85a1f5004a68/gizmos/1508431862312.json, dat://aafa5df22180352b1f0931a0268fe9c739fb75546cf31fd4d10e85a1f5004a68/gizmos/1508429270383.json, dat://aafa5df22180352b1f0931a0268fe9c739fb75546cf31fd4d10e85a1f5004a68/gizmos/1508429321661.json, dat://aafa5df22180352b1f0931a0268fe9c739fb75546cf31fd4d10e85a1f5004a68/gizmos/1508429399215.json
 
 
-sample link:
-nyan: https://78.media.tumblr.com/040d77e95e37f05fbc14b0b8ae3d3177/tumblr_opsismTLqh1vghf22o1_400.gif
-kids: http://i3.kym-cdn.com/photos/images/newsfeed/000/276/747/bf9.gif
-
-
-1. Click on the gizmo to start. 2. Click the page element where you want to insert a GIF. 3. Paste the URL of the GIF into the prompt. 4. You're done!
+Gizmo Name: Insert Audio
+Gizmo Description: Inserts an audio file into the page.
+Gizmo Docs: Note: This will soon be more user-friendly! To serve audio files peer-to-peer, first: 1. Click on the hamburger menu to the right of the Parallel button. 2. Click "New Site." 3. Name the new site "Media." 4. Add a .mp3, .wav, or .ogg file into the site. 5. Click on that file in the display. 6. Copy the text in the URL bar. Then... 1. Click on the gizmo to start. 2. Click the page element where you want to insert the player. 3. Paste the URL of the audio file into the prompt. 4. You're done!
