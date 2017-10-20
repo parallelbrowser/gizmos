@@ -11,18 +11,19 @@ $(window).one('click', function (e) {
   xpath = getXPathForElement(targetElement)
   postParams.xpath = xpath
   var imageURL = prompt('Enter the URL of the image.')
-  postParams.imageURL = imageURL
-  var container = document.createElement('div')
-  container.setAttribute('class', 'imageContainer')
-  var image = document.createElement('img')
-  image.setAttribute('class', 'insertedImage')
-  image.setAttribute('src', postParams.imageURL)
-  container.appendChild(image)
-  console.log('container', container)
-  targetElement.appendChild(container)
-  $('.imageContainer').draggable()
-  $('.imageContainer').resizable()
-  if (xpath && imageURL) {
-    savePostParams(postParams)
+  if (imageURL) {
+    postParams.imageURL = imageURL
+    var container = document.createElement('div')
+    container.setAttribute('class', 'imageContainer')
+    var image = document.createElement('img')
+    image.setAttribute('class', 'insertedImage')
+    image.setAttribute('src', postParams.imageURL)
+    container.appendChild(image)
+    targetElement.appendChild(container)
+    $('.imageContainer').draggable()
+    $('.imageContainer').resizable()
+    if (xpath && imageURL) {
+      savePostParams(postParams)
+    }
   }
 })

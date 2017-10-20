@@ -18,7 +18,7 @@ topBar.appendChild(form)
 form.appendChild(textArea)
 
 alert('Click the area of the page where you would like to place your sticky note. ' +
-      'When you are finished writing your note, press Enter to save.')
+      'Click on the note and start writing. When you are finished writing, press "Enter" to save.')
 
 $(window).one('click', function (e) {
   var x = e.clientX
